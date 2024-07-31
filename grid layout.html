@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid template area</title>
+    <style>
+        header,nav,aside,main, div,footer{
+            border:1px solid black;
+
+
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display:grid;
+            grid-template-areas: 'nav nav nav'
+            'h h h'
+            'side content content'
+            'aside1 aside2 aside3'
+            'foot foot foot';
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 60px 60px 1fr 90px 50px;
+        }
+        nav{
+            grid-area: nav;
+
+        }
+        header{
+            grid-area:h;
+
+        }
+        div{
+            grid-area:side;
+        }
+        main{
+            grid-area: content;
+        }
+       footer{
+        grid-area: foot;
+       }
+    </style>
+</head>
+<body>
+    <nav>Navigation bar</nav>
+    <header>Header</header>
+    <div>Sidebar</div>
+    <main>Main content</main>
+    <aside>Aside1</aside>
+    <aside>Aside2</aside>
+    <aside>Aside3</aside>
+    <footer>Footer</footer>
+</body>
+</html>

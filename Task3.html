@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+    <style>
+       
+        body{
+            margin:0;
+            padding:0;
+            overflow: hidden;
+            display:grid;
+            min-height: 100vh;         
+        }
+        .container {
+            margin:auto;
+            display: grid;
+            width: 100vw;
+            max-width: 1300px;
+            height: 95vh;
+            grid-template: repeat(3,1fr)/repeat(4,1fr);
+            overflow: hidden;   
+        } 
+        
+        .box {
+            overflow: hidden;
+        }
+        .l-1 {
+            grid-row: span 2;
+        }
+
+        .l-2 {
+            grid-column: span 2;
+        }
+
+        .l-9 {
+            grid-column: span 2;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box l-1">
+            <img src="img1.webp" alt="img" width="100%" height="100%">
+            
+        </div>
+        <div class="box l-2">
+            <img src="img2.webp" alt="img" width="100%" height="100%">
+        </div>
+        <div class="box l-3">
+            <img src="img3.webp" alt="img" width="100%" height="100%">
+        </div>
+
+        <div class="box l-4">
+            <img src="img4.webp" alt="img" width="100%" height="100%">
+        </div>
+        <div class="box l-5">
+            <img src="img5.webp" alt="img" width="100%" height="100%">
+        </div>
+        <div class="box l-6">
+            <img src="img6.webp" alt="img" width="100%" height="100%">
+        </div>
+        <div class="box l-7">
+            <img src="img7.webp" alt="img" width="100%" height="100%">
+        </div>
+        <div class="box l-8">
+            <img src="img8.webp" alt="img" width="100%" height="100%">
+        </div>
+        <div class="box l-9">
+            <img src="img9.webp" alt="img" width="100%" height="100%">
+        </div>
+    </div>
+</body>
+</html>

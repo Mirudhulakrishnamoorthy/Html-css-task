@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid example</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: grid;
+            height: 500px;
+            grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+        }
+
+        .item {
+            background-color: aqua;
+            border: 1px solid black;
+
+
+        }
+
+        .b-1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item b-1">Item 1</div>
+        <div class="item b-2">Item 2</div>
+        <div class="item b-3">Item 3</div>
+        <div class="item b-4">Item 4</div>
+        <div class="item b-5">Item 5</div>
+        <div class="item b-6">Item 6</div>
+        <div class="item b-7">Item 7</div>
+        <div class="item b-8">Item 8</div>
+        <div class="item b-9">Item 9</div>
+    </div>
+</body>
+</html>
