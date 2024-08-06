@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 100vh;
+            margin: 0;
+            background-image: url("background1.jpeg");
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 87px;
+            flex-wrap: wrap;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .card {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            text-align: center;
+            background-color: white;
+            border-radius: 15px;
+            width: 350px;
+            height: 550px;
+            box-shadow: 5px 5px 15px black;
+
+        }
+
+        .center {
+            transform: scale(1.2);
+            max-width: 400px;
+            min-height: 550px;
+        }
+
+        .img img {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .img {
+            height: 240px;
+            overflow: hidden;
+        }
+        .card .text {
+            padding: 15px;
+        }
+
+        .foot {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            color: white;
+            border: 1px solid rgb(172, 166, 166);
+            border-radius: 0 0 15px 15px;
+        }
+        .f {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+            margin: auto;
+        }
+
+        .value1 {
+            font-weight: bold;
+            font-size: 25px;
+            position:static;
+        }
+
+        .value2 {
+            font-size: 12px;
+            font-weight: 300;
+            position:static;
+        }
+        .container .border{
+            border-left: 1px solid rgba(96, 95, 95, 0.731);
+            border-right:1px solid rgba(96, 95, 95, 0.731);
+            margin-left:0px;
+            margin-right:2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="img">
+                <img src="img1.jpeg" alt="img" id="img1">
+            </div>
+            <div class="text">
+                <h3 style="color:rgb(233, 29, 63);">4 days ago</h3>
+                <h1>Post One</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.quisquam, voluptatibus aut provident,
+                    corporis sed! Et architecto omnis commodi.</p>
+            </div>
+            <div class="foot" style="background-color:rgb(233, 29, 63);">
+                <div class="f">
+                    <div class="value1">4<span style="vertical-align:super;font-size: small;">m</div>
+                    <div class="value2">READ</div>
+                </div>
+                <div class="f border">
+                    <div class="value1">5123</div>
+                    <div class="value2">VIEWS</div>
+                </div>
+                <div class="f">
+                    <div class="value1">32</div>
+                    <div class="value2">COMMENTS</div>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="card">
+                <div class="img">
+                    <img src="img2.jpeg" alt="img">
+                </div>
+                <div class="text">
+                    <h3 style="color: rgb(255, 106, 0) ;">1 Week ago</h3>
+                    <h1>Post Two</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.quisquam, voluptatibus aut provident,
+                        corporis sed! Et architecto omnis commodi.</p>
+                </div>
+                <div class="foot" style="background-color: rgb(255, 106, 0);">
+                    <div class="f">
+                        <div class="value1">7<span style="vertical-align:super;font-size: small;">m</div>
+                        <div class="value2">READ</div>
+                    </div>
+                    <div class="f border">
+                        <div class="value1">7152</div>
+                        <div class="value2">VIEWS</div>
+                    </div>
+                    <div class="f">
+                        <div class="value1">21</div>
+                        <div class="value2">COMMENTS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="img3.jpeg" alt="img">
+            </div>
+            <div class="text">
+                <h3 style="color:rgb(6, 178, 35)">3 Week ago</h3>
+                <h1>Post Three</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.quisquam, voluptatibus aut provident,
+                    corporis sed! Et architecto omnis commodi.</p>
+            </div>
+            <div class="foot" style="background-color:rgb(6, 178, 35);">
+                <div class="f">
+                    <div class="value1">5<span style="vertical-align:super;font-size: small;">m</div>
+                    <div class="value2">READ</div>
+                </div>
+                <div class="f border">
+                    <div class="value1">3021</div>
+                    <div class="value2">VIEWS</div>
+                </div>
+                <div class="f">
+                    <div class="value1">15</div>
+                    <div class="value2">COMMENTS</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
