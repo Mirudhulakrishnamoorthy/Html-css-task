@@ -1,0 +1,408 @@
+*{
+    padding: 0;
+    margin:0;
+    overflow-x: hidden;
+}
+header{
+    position: relative;
+    width: 100%;
+    height:auto;
+}
+.banner-text{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    translate:-50% -50%;
+    color: white;
+    text-align: center;
+}
+ .wel_txt h3{
+    text-transform: uppercase;
+    font-weight: normal;
+}
+h1{
+    font-size:55px;
+    font-style: italic;
+}
+.navbar{
+    position:absolute;
+    width:70%;
+    top: 26px;
+    left: 300px;
+    max-width: 1200;
+    height:auto;
+    background: rgb(248, 248, 248);
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    border: 1px solid rgb(255, 250, 250);
+    justify-content: space-around;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+.navbar img{
+    margin-right:26rem;
+    
+}
+
+.navbar li {
+    margin: 0 1rem;
+    text-transform: uppercase;
+    font-size:17px;
+}
+
+.navbar a {
+    color: rgb(4, 3, 3);
+    text-decoration: none;
+    font-weight: bold;
+}
+.welcome{
+    padding:120px;
+    max-width:1550px;
+    display:grid;
+    width:100vw;
+    height:720px;
+    grid-template-columns: 1fr 1fr;
+    overflow:hidden;
+}
+.wel_txt{
+    place-content:center;
+    padding-left:188px;
+}
+ h2{
+font-size: 50px;
+}
+ p{
+    font-size:19px;
+    color:grey;
+}
+button{
+    padding:12px 30px;
+    background-color:#ffb606;
+    color: black;
+    font-weight:none;
+    font-size:14px;
+    border:none;
+
+}
+.topic{
+    display: grid;
+    padding:100px;
+    width:50%;
+}
+ .food-area .container1{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    padding: 50px;
+    height: auto;
+}
+.food-area{
+    background-image: url(assets/food-bg.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: relative;
+}
+.cards {
+    display: flex;
+    max-width: 1650px;
+    padding-left: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 87px;
+    flex-wrap: wrap;
+}
+
+.food {
+    position: relative;
+    background-color: white;
+    width: 350px;
+    height: 450px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.food-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.food-content {
+    padding:30px;
+    background-color: rgba(221, 208, 208, 0.523);
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.first h5{
+    font-size: 25px;
+    color:black;
+}
+
+.second  p{
+    color: grey;
+    padding: 10px;
+    font-size: 18px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.reservation-area {
+    background-image: url(assets/reservation-bg.jpg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reserve-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.reserve-txt h2, .reserve-txt p, .reserve-txt button {
+    margin: 15px 0; 
+}
+
+.reserve-txt h2 {
+    color: white;
+}
+
+.reserve-txt p {
+    color: white;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.dishes-area {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    padding: 50px;
+    height: auto; 
+}
+
+.container2 {
+    
+    max-width: 1200px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.content-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0; 
+    box-sizing: border-box; 
+    width: 100%; 
+}
+
+.customer-area {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px; 
+    overflow: hidden;
+   
+}
+
+.customer-txt {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.customer-txt h2, .customer-txt p, .customer-txt button {
+    margin: 15px 0; 
+}
+
+.customer-txt h2 {
+    color: white;
+}
+
+.customer-txt p {
+    color: white;
+    font-style: italic;
+    font-size: 30px;
+}
+.food-update {
+    padding: 50px;
+    background-color: #f8f8f8; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.head {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.head h2 {
+    font-size: 36px;
+}
+
+.head p {
+    font-size: 18px;
+    color: grey;
+    font-style: italic;
+}
+.header{
+        text-align: center;
+        margin-bottom: 35px;
+    
+}
+
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    max-width: 360px; 
+    margin: 20px;
+    overflow: hidden; 
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.details {
+    padding: 20px;
+}
+
+.icon-sec {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: grey;
+    margin-bottom: 15px;
+}
+
+.heading h2 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.content p {
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.book-area{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 500px;
+    overflow: hidden;
+}
+.table-details{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate:-50% -50%;
+    color: white;
+    text-align: center;
+}
+.container3{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    padding: 50px;
+    height: auto;
+}
+form input{
+    width: 30.33%;
+    float: left;
+}
+form{
+    display: flex;
+    gap: 15px;
+}
+.foot1{
+    width:100vw;
+    height:50vh;
+    background-color:#131230;
+    overflow: hidden;
+}
+.foot1-details{
+    padding: 120px;
+    max-width: 1550px;
+    display: grid;
+    width: 100vw;
+    grid-template-columns:400px 356px 401px;
+    gap: 50px;
+    overflow: hidden;
+    translate:8% -3%;
+}
+.foot2{
+    padding: 30px 0;
+    background: #0d0d27;
+    color: #fff;
+}
+.container4{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+}
+.foot2-details{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
