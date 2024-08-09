@@ -60,7 +60,7 @@ button {
     color: #0C4153;
 }
 
-.btn2 {
+.button2,.btn2 {
     border: 1px solid #0C4153;
     background-color: #0C4153;
     color: white;
@@ -204,10 +204,12 @@ button.inner-btn {
         margin-right: 0;
     }
 
-    button {
-        width: 56%;
+    .button2 {
+        width: 25%;
         margin: 10px 0;
         font-size: 16px;
+        margin-top: -62px;
+
     }
 
     .navbar ul {
