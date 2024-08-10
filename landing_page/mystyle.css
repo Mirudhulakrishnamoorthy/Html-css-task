@@ -72,7 +72,18 @@ button {
     position: relative;
     z-index: 1;
 }
+/* .card.c-one .badge {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px; 
+    height: auto;
+}
 
+.card.c-one img {
+    max-width: 100%;
+    height: auto;
+} */
 
 
 
@@ -190,7 +201,7 @@ button.inner-btn {
     font-size: 22px;
     margin-bottom: 13px;
     margin-top: 29px;
-    font-weight:200;
+    font-weight:300;
 }
 
 .middle h1 {
@@ -336,7 +347,7 @@ button.inner-btn {
         margin-right: 0;
     }
     .header h2{
-        font-size: 30px;
+        font-size: 22px;
     }
     .button2 {
         width: 25%;
@@ -363,6 +374,7 @@ button.inner-btn {
     }
     .container {
         grid-template-columns: 1fr;
+        width: 100vw;
     }
     .card {
         max-width: 90%;
@@ -414,7 +426,7 @@ button.inner-btn {
 
 @media  screen and (max-width:500px) {
     .container {
-        width: 100vw;
+        width: 90vw;
         height: auto;
         padding: 20px;
         gap: 20px;
@@ -423,7 +435,7 @@ button.inner-btn {
     }
 
     .header h2{
-        font-size: 30px;
+        font-size: 22px;
     }
     .inner {
         width: 65%;
