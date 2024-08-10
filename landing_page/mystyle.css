@@ -70,7 +70,11 @@ button {
     font-size: 20px;
     color: black;
     position: relative;
+    z-index: 1;
 }
+
+
+
 
 .content img {
     position: absolute;
@@ -116,24 +120,25 @@ button {
 
 .icon1 img {
     position: absolute;
-    width: 10%;
-    height: 14%;
-    top:7%;
-    right:55%;
+    width: 9%;
+    height: 16%;
+    top: 6%;
+    right: 57%;
 }
 
 .icon2 img {
     position: absolute;
     width: 10%;
-    height: 14%;
+    height: 16%;
     top:7%;
-    right:6%;
+    right:7%;
 }
 
 .inner {
     display: flex;
     flex-wrap: wrap;
-    border-radius: 15px;
+    border-radius: 50px;
+    width: 268px;
     background-color: rgba(225, 153, 153, 0.834);
 }
 button.inner-btn {
@@ -197,6 +202,70 @@ button.inner-btn {
     font-size: 20px;
     width: 272px
 }
+@media screen and (max-width:1300px){
+    .btn {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .button2 {
+        width: 25%;
+        margin: 10px 0;
+        font-size: 16px;
+        margin-top: 15px;
+
+    }
+    .navbar ul {
+        flex-direction:row;
+    }
+
+    .navbar li {
+        margin: 10px 10px;
+    }
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        max-width: 90%;
+        width: 90%;
+    }
+    .c-two {
+        width: 100vw;
+        height: 100vh;
+        margin-bottom: 0;
+    }
+    
+    .content img {
+        position:inherit;
+        width: 20%;
+        padding-left: 664px;
+
+    }
+    .c-three {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        width: 100%;
+        height: 100%; 
+    }
+    .inner{
+        width:65%;
+        height:80%;
+    }
+    .middle h1 {
+        font-size: 20px;
+    }
+
+    .middle p {
+        font-size: 29px;
+    }
+
+    .last p {
+        font-size: 16px;
+        width: auto;
+    }
+}
+
+
 @media screen  and (max-width:1000px){
     
     .btn {
@@ -208,7 +277,7 @@ button.inner-btn {
         width: 25%;
         margin: 10px 0;
         font-size: 16px;
-        margin-top: -62px;
+        margin-top: 15px;
 
     }
 
@@ -253,7 +322,7 @@ button.inner-btn {
     }
 
     .middle p {
-        font-size: 24px;
+        font-size: 29px;
     }
 
     .last p {
@@ -261,47 +330,72 @@ button.inner-btn {
         width: auto;
     }
 }
-@media screen and (max-width:500px) {
+@media screen  and (max-width:900px){
+    .btn {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .header h2{
+        font-size: 30px;
+    }
+    .button2 {
+        width: 25%;
+        margin: 10px 0;
+        font-size: 16px;
+        margin-top: 15px;
+
+    }
+    button {
+        width: 93%;
+        margin: 19px 0;
+        font-size: 13px;
+        margin-top: auto;
+        max-width: 90%;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+        font-size: 17px;
+    }
     .container {
-        width: 100vw;
-        height: auto;
-        padding: 20px;
-        gap: 20px;
         grid-template-columns: 1fr;
     }
-
     .card {
-        max-width: 100%;
-        width: 100%;
+        max-width: 90%;
+        width: 90%;
     }
-
     .c-two {
-        width: 100%;
+        width: 100vw;
+        height: 100vh;
         margin-bottom: 0;
     }
+    button.inner-btn {
+        font-size:131%;
+        width: auto;
+        height: auto;
+        padding: auto;
+        margin-bottom: -15px;
+}
+    
+    .content img {
+        position:inherit;
+        width: 20%;
+        padding-left: 664px;
 
+    }
     .c-three {
         grid-template-columns: 1fr;
         gap: 20px;
         width: 80%;
-        height: 70%;
+        height: 50%; 
     }
-
-    .content img {
-        position: static;
-        width: 20%;
-
-    }
-
-    .icon1 {
-        position: static;
-        width: 50%;
-    }
-
-    .icon2 {
-        position: static;
-        width: 70%;
-      
+    .inner{
+        width:50%;
+        height:80%;
     }
 
     .middle h1 {
@@ -316,6 +410,89 @@ button.inner-btn {
         font-size: 16px;
         width: auto;
     }
+}
+
+@media  screen and (max-width:500px) {
+    .container {
+        width: 100vw;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+        grid-template-columns: 1fr;
+        overflow-x: hidden;
+    }
+
+    .header h2{
+        font-size: 30px;
+    }
+    .inner {
+        width: 65%;
+        height: auto;
+    }
+   
+    .card {
+        max-width: 90%;
+        width: 90%;
+        height: auto;
+    }
+
+    .c-two {
+        width: 100%;
+        margin-bottom: 0;
+        height: auto;
+    }
+
+    .c-three {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 80%;
+        height:auto;
+    }
+
+    .content img {
+        position: static;
+        width: 20%;
+
+    }
+    .button2 {
+        width: 40%;
+        margin: 10px 0;
+        font-size: 14px;
+        margin-top: 15px;
+
+    }
+
+
+    .icon1 {
+        position: static;
+        width: 50%;
+    }
+
+    .icon2 {
+        position: static;
+        width: 70%;
+      
+    }
+    button.inner-btn {
+        font-size: 14px;
+        width: auto;
+        height: auto;
+        padding: auto;
+        margin-bottom: -15px;
+}
+
+    .middle h1 {
+        font-size: 30px;
+    }
+
+    .middle p {
+        font-size: 16px;
+    }
+
+    .last p {
+        font-size: 14px;
+        width: auto;
+    }
 
     .btn {
         margin-left: 0;
@@ -323,17 +500,20 @@ button.inner-btn {
     }
 
     button {
-        width: 58%;
+        width: 93%;
         margin: 19px 0;
-        font-size: 16px;
-        margin-top: -116px;
+        font-size: 13px;
+        margin-top: auto;
+        max-width: 90%;
     }
 
     .navbar ul {
         flex-direction: column;
+        margin-right: 25px;
     }
 
     .navbar li {
         margin: 10px 0;
+        font-size: 15px;
     }
 }
